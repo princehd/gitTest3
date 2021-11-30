@@ -25,7 +25,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install build
-        pip install cx_Oracle
+        pip install cx_Oracle==8.3.0
         python -m pip install cx_Oracle --upgrade
     - name: Build package
       run: python "hello.py"
